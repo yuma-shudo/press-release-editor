@@ -49,7 +49,7 @@ class GenerateRequest(BaseModel):
 
 @app.get("/health")
 def health_check():
-    return {"status": "ok"}
+    return {"status": "ok", "version": "1.0.0"}
 
 @app.post("/save")
 def save(data: PressRelease):
